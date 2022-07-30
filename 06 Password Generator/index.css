@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: #1F2937;
+}
+
+.wrapper {
+    width: 400px;
+    margin: 50px auto;
+}
+
+
+
+.title {
+    color: white;
+    margin: 0;
+}
+
+.random-pass {
+    color: #4ADF86;
+    font-size: 34px;
+}
+
+.never {
+    color: #939799;
+    margin-top: 7px;
+    font-size: 18px;
+}
+
+.generate-btn {
+    background-color: #10B981;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+
+.line {
+    margin: 25px 0;
+    color: #2F3E53;
+}
+
+
+.pass-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.password {
+    color: #55F991;
+    height: 15px;
+    width: 150px;
+    background: #273549;
+    text-align: center;
+    border: 10px solid #273549;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0 10px;
+}
