@@ -115,6 +115,10 @@ button img {
 
 /* media queries */
 @media (max-width: 550px){
+    body {
+        width: 95%;
+    }
+    
     .image {
         width: 95%;
     }
@@ -161,6 +165,9 @@ button img {
 
 
 @media (max-width: 300px){
+    body {
+        width: 90%;
+    }
     .image {
         width: 85%;
     }
