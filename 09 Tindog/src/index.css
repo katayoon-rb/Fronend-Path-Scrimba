@@ -1,0 +1,212 @@
+body {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* header */
+header {
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-icons {
+    width: 28px;
+}
+
+.logo {
+    width: 78px
+}
+
+
+/* image */
+.image-container {
+    position: relative;
+    order: -1;
+    text-align: center;
+}
+
+.image {
+    max-width: 390px;
+    border-radius: 15px;
+}
+
+
+/* text */
+.text-container {
+    position: absolute;
+    top: 440px;
+    left: 23px;
+    order: 1;
+    text-align: left;
+    max-width: 380px;
+}
+
+.nameANDage {
+    color: #F8F8F8;
+    font-size: 30px;
+    margin: 0;
+}
+
+.bio {
+    color: #B7B7B7;
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+
+/* like & nope */
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    margin: 15px 25px;
+    width: 90px;
+    height: 60px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 50px;
+    box-shadow: #E9E9EA 0px 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#like:hover,
+#like:focus {
+    background-color: #DBFFF4;
+    box-shadow: #CCF1E6 0px 10px 20px;
+}
+
+#nope:hover,
+#nope:focus {
+    background-color: #FFE7EF;
+    box-shadow: #EDD9DF 0px 10px 20px;
+}
+
+button img {
+    width: 35px;
+}
+
+
+/* badges */
+#like-badge,
+#nope-badge {
+    position: absolute;
+    width: 233.91px;
+    transform: rotate(-30deg);
+    top: 50px;
+    left: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* media queries */
+@media (max-width: 550px){
+    .image {
+        width: 95%;
+    }
+    
+    
+    .text-container {
+        position: initial;
+        text-align: left;
+        margin: 15px 20px;
+    }
+    .nameANDage {
+        color: #000;
+    }
+    
+    
+    button {
+        margin: 5px 15px 20px 15px;
+        width: 85px;
+        height: 50px;
+    }
+    button img {
+        width: 25px;
+    }
+    
+    
+    header {
+        height: 55px;
+    }
+    .heading-icons {
+        width: 30px;
+    }
+    .logo {
+        width: 70px
+    }
+    
+    
+    #like-badge,
+    #nope-badge {
+        width: 175.91px;
+        top: 40px;
+    }
+}
+
+
+
+@media (max-width: 300px){
+    .image {
+        width: 85%;
+    }
+    .text-container {
+        position: initial;
+        text-align: left;
+        margin: 15px 30px;
+    }
+    .nameANDage {
+        color: #000;
+        font-size: 25px;
+        margin: 0;
+    }
+    .bio {
+        color: #B7B7B7;
+        font-size: 20px;
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+    
+    
+    button {
+        margin: 5px 15px 25px 15px;
+        width: 80px;
+        height: 40px;
+    }
+    button img {
+        width: 20px;
+    }
+    
+
+    header {
+        height: 40px;
+        padding: 5px 40px;
+    }
+    .heading-icons {
+        width: 20px;
+    }
+    .logo {
+        width: 50px
+    }
+    
+    
+    #like-badge,
+    #nope-badge {
+        width: 110.91px;
+        top: 28px;
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "09-tindog",
+  "version": "1.0.0",
+  "description": "## About Scrimba",
+  "scripts": {
+    "serve:dev": "live-server ./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
