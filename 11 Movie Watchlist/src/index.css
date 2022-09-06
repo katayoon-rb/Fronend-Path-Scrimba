@@ -1,0 +1,209 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+}
+
+
+
+#header {
+    background-image: url("images/header-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 375px;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header h1,
+#header a {
+    color: #fff;
+    text-shadow: 0 0 15px #121212;
+}
+#header h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0;
+}
+#header a,
+#not-found a {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+#search-bar {
+    margin: -34px auto;
+    width: 80%;
+    position: relative;
+    display: flex;
+    gap: 0;
+}
+#search-bar button,
+#search-bar input {
+    margin: 0;
+    border: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+#search-bar button {
+    height: 68px;
+    width: 23%;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    background-color: #4B4B4B;
+}
+#search-bar input {
+    height: 68px;
+    padding: 0 15px;
+    width: 70%;
+    color: #A5A5A5;
+    background-color: #2E2E2F;
+}
+#search-bar img {
+    margin: 0;
+    padding-left: 12px;
+    background-color: #2E2E2F;
+    height: 68px;
+    width: 68px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
+
+#start,
+#not-found,
+#not-found-wl {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#start {
+    top: 40%;
+}
+#not-found,
+#not-found-wl {
+    width: 85%;
+    top: 45%;
+}
+
+
+#start img {
+    width: 250px;
+}
+
+
+#start h4,
+#not-found h4,
+#not-found-wl h4 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2E2E2F;
+}
+#not-found h4,
+#not-found-wl h4 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+#results {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.results {                 /* films */
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    color: #fff;
+    border-bottom: 2px solid #A5A5A5;
+}
+
+
+.poster {                   /* film poster */
+    width: 170px;
+}
+.texts {                    /* film texts */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.texts p,
+.texts h2{
+    margin: 0;
+}
+
+
+.results-lines {           /* film info */
+    display: flex;
+    align-items: baseline;
+    font-size: 20px;
+    padding-left: 40px;
+}
+.results-desc {            /* film description */
+    color: #A5A5A5;
+    font-size: 23px;
+}
+
+
+.results-lines h2 {        /* film name */
+    font-size: 32px;
+    font-weight: 500;
+}
+.results-lines img,
+a img{            /* star & add img */ 
+    width: 20px;
+}
+
+.second-results-lines button,
+#not-found a,
+#not-found-wl a {    /* add to watchList btn */
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+.first-results-lines {    /* first line of film description */
+    gap: 8px;
+}
+.second-results-lines {   /* second line of film description */
+    gap: 40px;
+}
+
+div:last-child {
+    border: none;
+}
+
+
+
+
+.hidden {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+}

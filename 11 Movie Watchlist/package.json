@@ -1,0 +1,14 @@
+{
+  "name": "11-movie-watchlist",
+  "version": "1.0.0",
+  "description": "## About Scrimba",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server ./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
