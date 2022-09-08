@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Find your film</h1>
+            <a href="./watchlist.html">My WatchList</a>
+        </div>
+        <div id="search-bar">
+            <img src="images/search-vector.png">
+            <input type="text" placeholder="Search Here" id="search-input">
+            <button type="submit" id="search-button">Search</button>
+        </div>
+
+        <div class="main">
+            <div class="hidden" id="start">
+                <img src="images/film-vector.png">
+                <h4>Start exploring</h4>
+            </div>
+
+            <div class="hidden" id="not-found">
+                <h4>Unable to find what you are looking for. Please try another search.</h4>
+            </div>
+
+            <div class="results" id="results">
+                <button class="hidden" id="add-watch"> 
+                    <img src="images/add-vector.png">
+                    WatchList
+                </button>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
