@@ -12,7 +12,7 @@ for (let i = 0; i < keyArr.length - 6; i++) {
     listedTitles.push(listedFilms[i].Title)
 
     document.getElementById("WatchList-results").innerHTML += `
-        <div class="results" id=${listedFilms[i].Title}>
+        <div class="results" id=${listedFilms[i].Title.split(' ').join('')}>
             <img src=${listedFilms[i].Poster} class="poster">
             <div class="texts">
                 <div class="results-lines first-results-lines">
