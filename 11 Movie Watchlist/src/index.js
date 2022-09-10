@@ -14,7 +14,7 @@ for (var key in localStorage) {
 
 document.getElementById("search-button").addEventListener("click", () => {
     let input = inputBar.value.split(" ").join("+");
-    fetch(`http://www.omdbapi.com/?apikey=ec7cbf3b&t=${input}`)
+    fetch(`https://www.omdbapi.com/?apikey=ec7cbf3b&t=${input}`)
         .then(res => res.json())
         .then(data => {
             if (data.Response === "True") {
