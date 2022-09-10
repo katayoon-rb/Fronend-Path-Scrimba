@@ -38,7 +38,7 @@ for (let i = 0; i < keyArr.length - 6; i++) {
 }
 
 function removeFromWatchList(i) {
-    document.getElementById(listedTitles[i]).remove()
+    document.getElementById(listedTitles[i].split(' ').join('')).remove()
     localStorage.removeItem(listedTitles[i])
 }
 
