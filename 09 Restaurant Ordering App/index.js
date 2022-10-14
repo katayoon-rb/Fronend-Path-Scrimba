@@ -116,7 +116,17 @@ function remove(id) {
     let orderItem = menu[id]
     orderItem.available--
     totalPrice -= orderItem.price
-    ordersHTMLmap.delete(`${orderItem.name}`)
+
+    ordersHTMLmap.set(`${orderItem.name}`, `
+        <div class="order" id="${orderItem.id}">
+            <div>
+                <h6>${orderItem.name}</h6>
+                <h4 class="available">x${orderItem.available}</h4>
+                <button class="removeBtn" onclick="remove(${orderItem.id})">remove</button>
+            </div>
+            <h5>$${orderItem.price * orderItem.available}</h5>
+        </div>
+    `)
 
     if (orderItem.available === 0) {
         ordersHTMLmap.delete(`${orderItem.name}`)
