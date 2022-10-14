@@ -157,7 +157,9 @@ document.getElementById("payBtn").addEventListener('click', e => {
     }
 
     document.getElementById("clientName").innerText = ", " + clientName
+    
     document.querySelector("input").value = ''
+    orders = new Map()
 })
 
 
