@@ -6,16 +6,14 @@ const menu = [
         price: 14,
         emoji: "./images/pizza.png",
         available: 1,
-    },
-    {
+    }, {
         name: "Hamburger",
         ingredients: ["beef", "cheese", "lettuce"],
         price: 12,
         emoji: "./images/ham.png",
         id: 1,
         available: 1,
-    },
-    {
+    }, {
         name: "Beer",
         ingredients: ["grain, hops, yeast, water"],
         price: 12,
